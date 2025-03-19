@@ -43,13 +43,13 @@ Al finalizar retorna la lista creada.
 
 List* crea_lista() {
    List* L = create_list();
-   for(int i = 1 ; i < 11 ; i++)
-   {
+   for(int i = 1 ; i < 11 ; i++){
       int *dato = (int*)malloc(sizeof(int));
       *dato = i;
-      pushfront(L , dato);
+      pushFront(L , dato);
    }
    return L;
+
 }
 
 /*
@@ -59,10 +59,10 @@ retorne la suma de sus elementos.
 */
 int sumaLista(List *L) {
    int suma = 0;
-   *elemento = first(L);
+   int *elemento = first(L);
    while(elemento != NULL)
    {
-      suma += elemento ;
+      suma += *elemento ;
       elemento = next(L);
    }
    return suma;
@@ -78,10 +78,12 @@ posiciona en el elemento anterior.
 */
 
 void eliminaElementos(List*L, int elem){
-   *dato = first(L);
+   int *dato = first(L);
    while(dato != NULL){
-      if(elem == dato) popcurrent(dato);
-      dato = first(L);
+      if(elem == dato) {
+         popCurrent(dato);
+         dato = first(L);
+      }
    }
 }
 
@@ -93,7 +95,6 @@ Puedes usar una pila auxiliar.
 */
 
 void copia_pila(Stack* P1, Stack* P2) {
-   while 
 }
 
 /*
