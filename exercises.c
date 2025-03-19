@@ -46,7 +46,7 @@ List* crea_lista() {
    for(int i = 1 ; i < 11 ; i++){
       int *dato = (int*)malloc(sizeof(int));
       *dato = i;
-      pushFront(L , dato);
+      pushBack(L , dato);
    }
    return L;
 
@@ -81,7 +81,7 @@ void eliminaElementos(List*L, int elem){
    int *dato = first(L);
    while(dato != NULL){
       if(elem == *dato) {
-         popCurrent(*dato);
+         popCurrent(L);
          dato = first(L);
       }
    }
