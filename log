@@ -25,3 +25,28 @@ exercises.c:97:1: error: expected '(' before '}' token
 cc1.exe: all warnings being treated as errors
 Compilation failed
 3f6cb15
+Wed, Mar 19, 2025  8:46:40 AM: 
+In file included from test.c:5:0:
+exercises.c: In function 'crea_lista':
+exercises.c:50:7: error: implicit declaration of function 'pushfront' [-Werror=implicit-function-declaration]
+       pushfront(L , dato);
+       ^~~~~~~~~
+exercises.c: In function 'sumaLista':
+exercises.c:62:5: error: 'elemento' undeclared (first use in this function)
+    *elemento = first(L);
+     ^~~~~~~~
+exercises.c:62:5: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c: In function 'eliminaElementos':
+exercises.c:81:5: error: 'dato' undeclared (first use in this function)
+    *dato = first(L);
+     ^~~~
+exercises.c:83:24: error: implicit declaration of function 'popcurrent' [-Werror=implicit-function-declaration]
+       if(elem == dato) popcurrent(dato);
+                        ^~~~~~~~~~
+exercises.c: In function 'copia_pila':
+exercises.c:97:1: error: expected '(' before '}' token
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+a9e965e
