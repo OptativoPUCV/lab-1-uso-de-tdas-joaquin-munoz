@@ -119,7 +119,22 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 */
 
 int parentesisBalanceados(char *cadena) {
-   return 0;
+   List* l = crea_lista();
+   List* Linv = crea_lista();
+   int total = 0;
+   for(int i = 0 ; cadena[i] != NULL; i++){
+      pushBack(l, &cadena[i]);
+      pushFront(Linv, &cadena[i]);
+      total += 1;
+   }
+   if(total % 2 == 1) return 0;
+   void* primero = first(l);
+   void* ultimo = first(Linv);
+   for(int i = 0 ; total; i++){
+      if(primero == ultimo) suma += 2;
+   }
+   if(suma == total) return 1;
+   else return 0;
 }
 
 
