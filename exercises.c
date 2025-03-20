@@ -11,12 +11,12 @@
 //Funciones auxiliares que puedes utilizar para debuggear tus ejercicios
 //NO MODIFICAR
 void imprime_lista(List *L) {
-   char *dato;
-   dato = (char*)first(L);
+   int *dato;
+   dato = (int*)first(L);
    printf("[");
    while(dato != NULL) {
-      printf("%c ", *dato);
-      dato = (char*)next(L);
+      printf("%d ", *dato);
+      dato = (int*)next(L);
    }
    printf("]\n");
 
