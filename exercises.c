@@ -144,6 +144,7 @@ int parentesisBalanceados(char *cadena) {
       primero = next(l);
       ultimo = next(Linv);
    }
+   printf("%d", suma);
    if(suma == total) return 1;
    
    return 0;
