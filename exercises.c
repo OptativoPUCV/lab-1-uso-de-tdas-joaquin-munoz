@@ -131,7 +131,7 @@ int parentesisBalanceados(char *cadena) {
    char* primero = first(l);
    char* ultimo = first(Linv);
    int suma = 0 ;
-   for(int i = 0 ; total; i++){
+   for(int i = 0 ; i < total; i++){
       if((*primero) == (*ultimo)) {
          suma += 2;
       }
