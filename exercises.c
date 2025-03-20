@@ -127,7 +127,7 @@ int parentesisBalanceados(char *cadena) {
       pushFront(Linv, &cadena[i]);
       total += 1;
    }
-   if(total % 2 == 1) return 0;
+   if(total % 2 != 0) return 0;
    char* primero = first(l);
    char* ultimo = first(Linv);
    int suma = 0 ;
