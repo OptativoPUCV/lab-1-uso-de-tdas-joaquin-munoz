@@ -122,7 +122,7 @@ int parentesisBalanceados(char *cadena) {
    List* l = crea_lista();
    List* Linv = crea_lista();
    int total = 0;
-   for(int i = 0 ; cadena[i] != NULL; i++){
+   for(int i = 0 ; cadena[i]; i++){
       pushBack(l, &cadena[i]);
       pushFront(Linv, &cadena[i]);
       total += 1;
