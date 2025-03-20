@@ -119,8 +119,8 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 */
 
 int parentesisBalanceados(char *cadena) {
-   List* l = crea_lista();
-   List* Linv = crea_lista();
+   List* l = create_lista();
+   List* Linv = create_lista();
    for(int i = 0 ; cadena[i]; i++){
       pushBack(l, &cadena[i]);
       pushFront(Linv, &cadena[i]);
