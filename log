@@ -243,3 +243,9 @@ exercises.c:126:10: error: unused variable 'dato' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 b765fd7
+Thu, Mar 20, 2025  7:17:19 PM: 
+ exercises.c | 13 -------------
+ 1 file changed, 13 deletions(-)
+ tests:  4|1
+total_score: 50/70
+f36e7da
