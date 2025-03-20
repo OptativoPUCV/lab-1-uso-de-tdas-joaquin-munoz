@@ -278,3 +278,14 @@ exercises.c:125:30: error: comparison between pointer and integer [-Werror]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 80c95f2
+Thu, Mar 20, 2025  7:40:25 PM: 
+ exercises.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:125:30: error: comparison between pointer and integer [-Werror]
+    for(int i = 0 ; cadena[i] != NULL; i++){
+                              ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+0d784fe
