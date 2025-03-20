@@ -132,13 +132,13 @@ int parentesisBalanceados(char *cadena) {
    char* ultimo = first(Linv);
    int suma = 0 ;
    for(int i = 0 ; i < total; i++){
-      if((*primero == '{') && (*ultimo == '}')) {
+      if(*primero == '{' && *ultimo == '}') {
          suma += 2;
       }
-      if((*primero == '[') && (*ultimo == ']')) {
+      if(*primero == '[' && *ultimo == ']') {
          suma += 2;
       }
-      if((*primero == '(') && (*ultimo == ')')) {
+      if(*primero == '(' && *ultimo == ')') {
          suma += 2;
       }
       primero = next(l);
