@@ -147,6 +147,7 @@ int parentesisBalanceados(char *cadena) {
    printf("%d", suma);
    if(suma == total) return 1;
    imprime_lista(l);
+   printf("\n");
    imprime_lista(Linv);
    
    return 0;
