@@ -149,9 +149,8 @@ int parentesisBalanceados(char *cadena) {
    imprime_lista(l);
    printf("\n");
    imprime_lista(Linv);
-   
-   return 0;
    */
+   return 0;
    
 }
 
