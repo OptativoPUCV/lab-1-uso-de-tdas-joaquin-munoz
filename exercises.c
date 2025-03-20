@@ -150,8 +150,8 @@ int parentesisBalanceados(char *cadena) {
    printf("\n");
    imprime_lista(Linv);
    */
-   ListcopiaCadena = create_list() ;
-   List copiaAlreves = create_list() ;
+   List* copiaCadena = create_list() ;
+   List* copiaAlreves = create_list() ;
    for(int i = 0 ; cadena[i] ; i++){
       pushBack(copiaCadena, &cadena[i]) ;
       pushFront(copiaAlreves, &cadena[i]) ;
@@ -159,16 +159,16 @@ int parentesisBalanceados(char *cadena) {
    int tamano = get_size(copiaCadena) ;
    if (tamano % 2 != 0) return 0 ;
 
-   charprimDato = first(copiaCadena) ;
-   char ultDato = first(copiaAlreves) ;
+   char* primDato = first(copiaCadena) ;
+   char* ultDato = first(copiaAlreves) ;
 
    int count = 0 ;
    while (count != tamano)
    {
-      if (primDato == '(') {
-         if (primDato !=ultDato - 1) return 0 ;
+      if (*primDato == '(') {
+         if (*primDato !=*ultDato - 1) return 0 ;
       }
-      else if (primDato !=ultDato - 2) return 0 ;
+      else if (*primDato != *ultDato - 2) return 0 ;
       primDato = next(copiaCadena) ;
       ultDato = next(copiaAlreves) ;
       count += 2 ;

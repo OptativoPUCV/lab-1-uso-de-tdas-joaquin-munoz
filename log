@@ -426,3 +426,9 @@ exercises.c:154:9: error: unused variable 'copiaAlreves' [-Werror=unused-variabl
 cc1.exe: all warnings being treated as errors
 Compilation failed
 fd452e6
+Thu, Mar 20, 2025  8:22:06 PM: 
+ exercises.c | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+ tests:  9|0
+total_score: 70/70
+6ed6ed3
