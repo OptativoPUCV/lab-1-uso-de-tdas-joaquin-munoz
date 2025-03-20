@@ -396,3 +396,33 @@ Thu, Mar 20, 2025  8:18:50 PM:
  tests:  4|1
 total_score: 50/70
 118a8b1
+Thu, Mar 20, 2025  8:20:56 PM: 
+ exercises.c | 31 ++++++++++++++++++++++++++++++-
+ 1 file changed, 30 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:153:4: error: 'ListcopiaCadena' undeclared (first use in this function)
+    ListcopiaCadena = create_list() ;
+    ^~~~~~~~~~~~~~~
+exercises.c:153:4: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:154:4: error: variable 'copiaAlreves' has initializer but incomplete type
+    List copiaAlreves = create_list() ;
+    ^~~~
+exercises.c:154:9: error: storage size of 'copiaAlreves' isn't known
+    List copiaAlreves = create_list() ;
+         ^~~~~~~~~~~~
+exercises.c:156:16: error: 'copiaCadena' undeclared (first use in this function)
+       pushBack(copiaCadena, &cadena[i]) ;
+                ^~~~~~~~~~~
+exercises.c:162:4: error: 'charprimDato' undeclared (first use in this function)
+    charprimDato = first(copiaCadena) ;
+    ^~~~~~~~~~~~
+exercises.c:168:11: error: 'primDato' undeclared (first use in this function)
+       if (primDato == '(') {
+           ^~~~~~~~
+exercises.c:154:9: error: unused variable 'copiaAlreves' [-Werror=unused-variable]
+    List copiaAlreves = create_list() ;
+         ^~~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+fd452e6
