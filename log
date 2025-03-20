@@ -296,3 +296,23 @@ c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot ope
 collect2.exe: error: ld returned 1 exit status
 Compilation failed
 4533691
+Thu, Mar 20, 2025  7:52:58 PM: 
+ exercises.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:135:10: error: dereferencing 'void *' pointer [-Werror]
+       if(*primero == *ultimo) suma += 2;
+          ^~~~~~~~
+exercises.c:135:22: error: dereferencing 'void *' pointer [-Werror]
+       if(*primero == *ultimo) suma += 2;
+                      ^~~~~~~
+exercises.c:135:10: error: void value not ignored as it ought to be
+       if(*primero == *ultimo) suma += 2;
+          ^~~~~~~~
+exercises.c:135:22: error: void value not ignored as it ought to be
+       if(*primero == *ultimo) suma += 2;
+                      ^~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+22ebefa
