@@ -379,3 +379,14 @@ Thu, Mar 20, 2025  8:11:18 PM:
  tests:  4|1
 total_score: 50/70
 fa988e8
+Thu, Mar 20, 2025  8:18:33 PM: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'parentesisBalanceados':
+exercises.c:156:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+daafd60
