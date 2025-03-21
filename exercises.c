@@ -132,7 +132,7 @@ int parentesisBalanceados(char *cadena) {
    for(int i = 0 ;i < total; i++){
       push(Linv, dato);
       pop(descechable);
-      int* dato = top(descechable);
+      dato = top(descechable);
    }
    if(total % 2 != 0) return 0;
    
